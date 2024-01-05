@@ -9,20 +9,13 @@ java {
     sourceCompatibility = '11'
 }
 
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation 'org.projectlombok:lombok:1.18.28'
-    compileOnly 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    annotationProcessor 'org.projectlombok:lombok:1.18.26'
 
     //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
@@ -35,4 +28,3 @@ test {
 jar {
     enabled = true
 }
-
